@@ -1,10 +1,10 @@
-# Python-based JUnit publisher for Azure DevOps Testing Plan integration
+# Python-based JUnit publisher for Azure DevOps Testing Plan Integration
 
 Azure DevOps currently has a very minimalistic integration for automated tests, and a lot of manual setup needs to be done to bring in testing data into ADO for tracking.
 
 This tool automates publishing JUnit test results (any language, testing framework) to Azure DevOps allowing automated tests results can be tracked on AzureDevOps too. 
 
-## How-to run:
+## How-to run
 - Clone this repo.
 - [Optional] Create a virtual environment with `python -m venv venv` (or however your Python is setup)
 - Install dependencies with `pip install -r requirements.txt`
@@ -12,7 +12,7 @@ This tool automates publishing JUnit test results (any language, testing framewo
 - `cd src`
 - Run `python -m testpublisher -S ../config.json` (adjust the path according to your structure)
 
-## Config file structure:
+## Config file
 ```
 {
     "scan_folder": "string",  // Folder to scan for test results. Default: "../coverage_files/"
@@ -26,7 +26,7 @@ This tool automates publishing JUnit test results (any language, testing framewo
 }
 ```
 
-## Next steps:
+## Next steps
 - Build this into a pip package.
 - Fill in current iteration name and number.
 - Add a config for creating Test Suites.
